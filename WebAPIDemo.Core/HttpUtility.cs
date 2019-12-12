@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace WebAPIDemo.Core
 {
+    /// <summary>
+    /// HTTP utility class.
+    /// </summary>
     public class HttpUtility : IHttpUtility
     {
+        /// <summary>
+        /// Fetch the contents of a url using HTTP.
+        /// </summary>
+        /// <param name="requestUrl">The request url.</param>
+        /// <returns>The task object representing the contents of the url.</returns>
         public async Task<string> FetchAddressAsync(string requestUrl)
         {
             string data = null;
